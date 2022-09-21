@@ -43,12 +43,12 @@ describe('',()=>{
     
        cy.get('#totalPrice > .btn').click()
        
-        cy.get('input[name="customerInfo.name"]').type('usernameF')
-        cy.get('input[name="customerInfo.surname"]').type('surnameF')
-        cy.get('input[name="customerInfo.email"]').type('emailFaker@gmail.com')
+        cy.get('input[name="customerInfo.name"]').type('Emine')
+        cy.get('input[name="customerInfo.surname"]').type('Yıldırım')
+        cy.get('input[name="customerInfo.email"]').type('emineyildirim.te@gmail.com')
         cy.get('input[name="customerInfo.phone"]').type('5555555555')
-        cy.get('input[name="roomInfo[0].persons[0].name"]').type('usernameF')
-        cy.get('input[name="roomInfo[0].persons[0].surname"]').type('usernameF')
+        cy.get('input[name="roomInfo[0].persons[0].name"]').type('Emine')
+        cy.get('input[name="roomInfo[0].persons[0].surname"]').type('Yıldırım')
         cy.get('.col-12 > .row > :nth-child(2) > .btn').click()
         cy.get(':nth-child(4) > .type > .row > .payment-col > .text-wrapper > :nth-child(1)').should('contain.text','Online öde')
 
